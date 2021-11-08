@@ -4,7 +4,8 @@ import PackageDescription
 let package = Package(
     name: "mysql-nio",
     platforms: [
-       .macOS(.v10_15)
+       .macOS(.v10_15),
+       .iOS(.v13),
     ],
     products: [
         .library(name: "MySQLNIO", targets: ["MySQLNIO"]),
